@@ -3,19 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
   </head>
   <body>
-    helloworld
+    
 
+    
     <script>
-      console.log("hello world");
+     
+     function getHumanChoice(){
+      
+      let choice = alert("what","")
+
+    }
+
+     console.log("hello world");
 
       let random = Math.random();
       console.log("Random Number:", random);
-      computerChoice(random);
+      getComputerChoice(random);
 
-      function computerChoice(random) {
+     
+
+      function getComputerChoice() {
         if (random <= 0.33) {
           console.log("scissors");
         } else if (random > 0.33 && random <= 0.66) {
@@ -23,6 +33,12 @@
         } else {
           console.log("Rock");
         }
+        
+        return random;
+      }
+      
+      function getHumanChoice(){
+        prompt("what","")
       }
     </script>
   </body>
